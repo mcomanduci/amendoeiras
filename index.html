@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Amendoeiras</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="/script.js"></script>
+    <script defer src="/script2.js"></script>
+  </head>
+  <body>
+    <header id="header" class="sticky top-0 bg-white w-full z-50 px-8">
+      <div
+        id="header-inner"
+        class="flex justify-between py-6 px-4 items-center container mx-auto transition-all duration-500 ease-in-out"
+      >
+        <div class="max-w-44">
+          <img src="/src/img/logo hotel amendoeiras.jpeg" alt="" />
+        </div>
+
+        <label
+          class="lg:hidden relative z-40 cursor-pointer px-3 py-6"
+          for="mobile-menu"
+        >
+          <input class="peer hidden" type="checkbox" id="mobile-menu" />
+          <div
+            class="relative z-50 block h-[1px] w-7 bg-black bg-transparent content-[''] before:absolute before:top-[-0.35rem] before:z-50 before:block before:h-full before:w-full before:bg-black before:transition-all before:duration-200 before:ease-out before:content-[''] after:absolute after:right-0 after:bottom-[-0.35rem] after:block after:h-full after:w-full after:bg-black after:transition-all after:duration-200 after:ease-out after:content-[''] peer-checked:bg-transparent before:peer-checked:top-0 before:peer-checked:w-full before:peer-checked:rotate-45 before:peer-checked:transform after:peer-checked:bottom-0 after:peer-checked:w-full after:peer-checked:-rotate-45 after:peer-checked:transform"
+          ></div>
+          <div
+            class="fixed inset-0 z-40 hidden h-full w-full bg-black/50 backdrop-blur-sm peer-checked:block"
+          >
+            &nbsp;
+          </div>
+          <div
+            class="fixed top-0 right-0 z-40 h-full w-full translate-x-full overflow-y-auto overscroll-y-none transition duration-500 peer-checked:translate-x-0"
+          >
+            <div
+              class="flex flex-col gap-8 justify-between float-right min-h-full w-full bg-white px-6 pt-12 shadow-2xl"
+            >
+              <div class="max-w-44">
+                <img src="/src/img/logo hotel amendoeiras.jpeg" alt="" />
+              </div>
+              <ul
+                class="flex flex-col gap-6 text-sm font-bold uppercase items-center"
+              >
+                <li class="hover:text-red-700"><a href="/">Home</a></li>
+                <li class="hover:text-red-700">
+                  <a href="/o-hotel.html">O Hotel</a>
+                </li>
+                <li class="hover:text-red-700">
+                  <a href="/quartos.html">Quartos</a>
+                </li>
+                <li class="hover:text-red-700">
+                  <a href="/lazer.html">Lazer</a>
+                </li>
+                <li class="hover:text-red-700">
+                  <a href="/atracoes.html">Atrações</a>
+                </li>
+                <li class="hover:text-red-700">
+                  <a href="/praias.html">Praias</a>
+                </li>
+                <li class="hover:text-red-700">
+                  <a href="/contato.html">Contato</a>
+                </li>
+                <a href="">
+                  <li
+                    class="bg-[#DD9933] text-white rounded py-2 px-4 border border-[#DD9933] hover:bg-white hover:text-[#DD9933]"
+                  >
+                    Reservas
+                  </li>
+                  </a>
+              </ul>
+
+              <div class="flex flex-col gap-4 text-[13px]/[27px]">
+                <div
+                  class="flex gap-4 text-2xl justify-around mb-4 relative after:w-full after:h-[1px] after:bg-[#EAEAEA] after:absolute after:-bottom-4"
+                >
+                  <a href=""
+                    ><i class="fa-brands fa-instagram hover:text-red-600"></i
+                  ></a>
+                  <a href=""
+                    ><i
+                      class="fa-brands fa-square-facebook hover:text-blue-500"
+                    ></i
+                  ></a>
+                  <a href=""
+                    ><i class="fa-brands fa-whatsapp hover:text-green-400"></i
+                  ></a>
+                </div>
+                <p class="text-center mb-4">
+                  +55 (73) 98815-5484 / +55 (73) 3298-1397
+                </p>
+              </div>
+            </div>
+          </div>
+        </label>
+
+        <div class="hidden lg:flex flex-col items-end gap-4">
+          <div class="flex gap-4 text-[13px]/[27px]">
+            <p class="border-b border-black">
+              Entre em contato.
+              <strong>+55 (73) 98815-5484 / +55 (73) 3298-1397</strong>
+            </p>
+            <div class="border-b border-black flex gap-4 text-lg">
+              <a href=""
+                ><i class="fa-brands fa-instagram hover:text-red-600"></i
+              ></a>
+              <a href=""
+                ><i class="fa-brands fa-square-facebook hover:text-blue-500"></i
+              ></a>
+              <a href=""
+                ><i class="fa-brands fa-whatsapp hover:text-green-400"></i
+              ></a>
+            </div>
+          </div>
+          <nav>
+            <ul
+              class="flex flex-wrap gap-9 xl:gap-12 text-[13px]/[14px] font-bold uppercase items-center"
+            >
+              <li class="hover:text-red-700"><a href="/">Home</a></li>
+              <li class="hover:text-red-700">
+                <a href="/o-hotel.html">O Hotel</a>
+              </li>
+              <li class="hover:text-red-700">
+                <a href="/quartos.html">Quartos</a>
+              </li>
+              <li class="hover:text-red-700">
+                <a href="/lazer.html">Lazer</a>
+              </li>
+              <li class="hover:text-red-700">
+                <a href="/atracoes.html">Atrações</a>
+              </li>
+              <li class="hover:text-red-700">
+                <a href="/praias.html">Praias</a>
+              </li>
+              <li class="hover:text-red-700">
+                <a href="/contato.html">Contato</a>
+              </li>
+              <a href="">
+              <li
+                class="bg-[#DD9933] text-white rounded py-2 px-4 border border-[#DD9933] hover:bg-white hover:text-[#DD9933]"
+              >
+                Reservas
+              </li>
+            </a>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section
+      id="Hero"
+      class="relative w-full h-[620px] mx-auto overflow-hidden shadow-[0_0_5px_0_rgba(0,0,0,0.3)] group"
+    >
+      <!-- Carousel Wrapper -->
+      <div
+        id="carousel"
+        class="flex transition-transform duration-500 ease-in-out h-full"
+      >
+        <!-- Carousel Slide 1 -->
+        <div
+          class="w-full flex-shrink-0 h-full absolute opacity-0 transition-opacity duration-500 ease-in-out active"
+        >
+          <div
+            class="absolute inset-0 flex flex-col justify-center items-center text-white text-center bg-black bg-opacity-30 gap-8"
+          >
+            <h2 class="text-6xl font-semibold drop-shadow-lg">
+              Bem Vindo ao Hotel Amendoeiras
+            </h2>
+            <p class="text-2xl mb-4 drop-shadow-lg">
+              Uma experiência única em hospedagem e lazer em Prado, Bahia.
+            </p>
+            <button
+              class="hover:bg-[#DD9933] bg-white text-[#DD9933] hover:text-white font-bold py-3 px-6 rounded"
+            >
+              Reserve Agora
+            </button>
+          </div>
+          <img
+            src="/src/img/home/entrada.jpg"
+            alt="Faixada do Hotel"
+            class="w-full h-full object-cover"
+          />
+        </div>
+
+        <!-- Carousel Slide 2 -->
+        <div
+          class="w-full flex-shrink-0 h-full absolute opacity-0 transition-opacity duration-500 ease-in-out"
+        >
+          <div
+            class="absolute inset-0 flex flex-col justify-center items-center text-white text-center bg-black bg-opacity-30 gap-8"
+          >
+            <h2 class="text-6xl font-semibold drop-shadow-lg">
+              Receber é uma tradição
+            </h2>
+            <p class="text-2xl mb-4 drop-shadow-lg">
+              Quartos confortáveis, área de lazer completa e café da manhã
+            </p>
+            <button
+              class="hover:bg-[#DD9933] bg-white text-[#DD9933] hover:text-white font-bold py-3 px-6 rounded"
+            >
+              Reserve Agora
+            </button>
+          </div>
+          <img
+            src="/src/img/home/quarto.jpg"
+            alt="Slide 2"
+            class="w-full h-full object-cover"
+          />
+        </div>
+
+        <!-- Carousel Slide 3 -->
+        <div
+          class="w-full flex-shrink-0 h-full relative opacity-0 transition-opacity duration-500 ease-in-out"
+        >
+          <div
+            class="absolute inset-0 flex flex-col justify-center items-center text-white text-center bg-black bg-opacity-30 gap-8"
+          >
+            <h2 class="text-6xl font-semibold drop-shadow-lg">
+              Estrutura completa para toda a família
+            </h2>
+            <p class="text-2xl mb-4 drop-shadow-lg">
+              Piscina adulta e infantil, área de churrasqueira e sinuca.
+            </p>
+            <button
+              class="hover:bg-[#DD9933] bg-white text-[#DD9933] hover:text-white font-bold py-3 px-6 rounded"
+            >
+              Reserve Agora
+            </button>
+          </div>
+          <img
+            src="/src/img/home/piscina.jpg"
+            alt="Slide 3"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+
+      <!-- Carousel Controls (Prev and Next Buttons) -->
+      <button
+        id="prev"
+        class="flex items-center justify-start absolute left-0 top-1/2 transform -translate-y-1/2 p-4 h-full w-1/4"
+      >
+        <i
+          class="fa-solid fa-chevron-left text-2xl p-4 text-white opacity-0 group-hover:opacity-100 bg-black bg-opacity-50 transition-opacity duration-300"
+        ></i>
+      </button>
+      <button
+        id="next"
+        class="flex items-center justify-end absolute right-0 top-1/2 transform -translate-y-1/2 p-4 h-full w-1/4"
+      >
+        <i
+          class="fa-solid fa-chevron-right text-2xl p-4 text-white opacity-0 group-hover:opacity-100 bg-black bg-opacity-50 transition-opacity duration-300"
+        ></i>
+      </button>
+
+      <!-- Indicators -->
+      <div
+        class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-4"
+      >
+        <span
+          class="indicator w-3 h-3 bg-white opacity-40 rounded-full cursor-pointer"
+        ></span>
+        <span
+          class="indicator w-3 h-3 bg-white opacity-40 rounded-full cursor-pointer"
+        ></span>
+        <span
+          class="indicator w-3 h-3 bg-white opacity-40 rounded-full cursor-pointer"
+        ></span>
+      </div>
+    </section>
+
+    <section
+      id="areas"
+      class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-8 py-16"
+    >
+      <div class="space-y-4 flex flex-col items-center">
+        <div
+          class="overflow-hidden shadow-[0_0_5px_0_rgba(0,0,0,0.3)] max-w-[400px] md:w-full"
+        >
+          <img
+            src="/src/img/home/quartos.png"
+            alt=""
+            class="hover:scale-110 transition ease-in-out duration-1000"
+          />
+        </div>
+        <div class="space-y-2">
+          <h2 class="text-center text-2xl font-semibold EDIT">Quartos</h2>
+          <p class="text-center text-[#5a5a5a]">
+            São 44 apartamentos confortáveis, todos com ar condicionado,
+            frigobar e televisão.
+          </p>
+        </div>
+      </div>
+
+      <div class="space-y-4 flex flex-col items-center">
+        <div
+          class="overflow-hidden shadow-[0_0_5px_0_rgba(0,0,0,0.3)] max-w-[400px] md:w-full"
+        >
+          <img
+            src="/src/img/home/lazer.png"
+            alt=""
+            class="hover:scale-110 transition ease-in-out duration-1000"
+          />
+        </div>
+        <div class="space-y-2">
+          <h2 class="text-center text-2xl font-semibold EDIT">Área de Lazer</h2>
+          <p class="text-center text-[#5a5a5a]">
+            Área de lazer com piscina adulta e para crianças, área de
+            churrasqueira e sinuca.
+          </p>
+        </div>
+      </div>
+
+      <div class="space-y-4 flex flex-col items-center">
+        <div
+          class="overflow-hidden shadow-[0_0_5px_0_rgba(0,0,0,0.3)] max-w-[400px] md:w-full"
+        >
+          <img
+            src="/src/img/home/praia.png"
+            alt=""
+            class="hover:scale-110 transition ease-in-out duration-1000"
+          />
+        </div>
+        <div class="space-y-2">
+          <h2 class="text-center text-2xl font-semibold EDIT">Praias</h2>
+          <p class="text-center text-[#5a5a5a]">
+            Prado possui praias para todos os gostos e em sua grande maioria são
+            praias tranquilas e de fácil acesso.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="bg-gray-200">
+      <section
+        id="servicos"
+        class="container mx-auto flex flex-col items-center"
+      >
+        <div class="py-8 text-4xl font-semibold EDIT space-y-4">
+          <h3>Nossos Serviços</h3>
+          <div class="w-28 mx-auto">
+            <img src="/src/img/waves.png" alt="" />
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 md:grid-cols-4 xl:gap-6">
+          <div class="flex flex-col gap-4 items-center xl:w-[270px] mb-8">
+            <div class="mb-4">
+              <img src="/src/img/home/swim-icon-2-1.png" alt="" />
+            </div>
+            <h3 class="EDIT text-2xl font-semibold text-center">Piscina</h3>
+            <p
+              class="text-center lg:px-8 pb-3 text-[15px]/[27px] text-[#5a5a5a]"
+            >
+              Área de lazer completa com piscina adulta e infantil.
+            </p>
+          </div>
+
+          <div class="flex flex-col gap-4 items-center xl:w-[270px] mb-8">
+            <div class="mb-4">
+              <img src="/src/img/home/wifi-icon-2-1.png" alt="" />
+            </div>
+            <h3 class="EDIT text-2xl font-semibold text-center">Wifi Grátis</h3>
+            <p
+              class="text-center lg:px-8 pb-3 text-[15px]/[27px] text-[#5a5a5a]"
+            >
+              Rede Wifi em todos os quartos e dependências do hotel.
+            </p>
+          </div>
+
+          <div class="flex flex-col gap-4 items-center xl:w-[270px] mb-8">
+            <div class="mb-4">
+              <img src="/src/img/home/taxi-icon-2-1.png" alt="" />
+            </div>
+            <h3 class="EDIT text-2xl font-semibold text-center">
+              Estacionamento
+            </h3>
+            <p
+              class="text-center lg:px-8 pb-3 text-[15px]/[27px] text-[#5a5a5a]"
+            >
+              Comodidade e segurança! Estacionamento exclusivo para hóspedes.
+            </p>
+          </div>
+
+          <div class="flex flex-col gap-4 items-center xl:w-[270px] mb-8">
+            <div class="mb-4">
+              <img src="/src/img/home/food-icon-2-1.png" alt="" />
+            </div>
+            <h3 class="EDIT text-2xl font-semibold text-center">
+              Café da Manhã
+            </h3>
+            <p
+              class="text-center lg:px-8 pb-3 text-[15px]/[27px] text-[#5a5a5a]"
+            >
+              Variedade e sabor para começar o seu dia bem.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section id="video" class="mt-8 relative lg:h-[400px] overflow-hidden">
+      <video
+        id="background-video"
+        autoplay
+        loop
+        muted
+        poster="https://assets.codepen.io/6093409/river.jpg"
+      >
+        <source src="/src/img/video.mp4" type="video/mp4" />
+      </video>
+    </section>
+
+    <section class="container mx-auto my-8 px-2">
+      <h3 class="EDIT text-2xl font-semibold relative">Instagram</h3>
+      <div class="bg-[#DD9933] h-[1px] w-44 mt-4"></div>
+    </section>
+
+    <div class="bg-black">
+      <footer class="container mx-auto">
+        <p class="py-8 text-white text-center text-[13px]/[26px]">
+          © <a class="text-red-600" href="">Praia Hotel Amendoeiras</a> 2024.
+          Todos os direitos reservados.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

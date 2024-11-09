@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Amendoeiras</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="/script.js"></script>
+    <script defer src="/script2.js"></script>
+  </head>
+  <body>
+    <header id="header" class="sticky top-0 bg-white w-full z-50">
+      <div
+        id="header-inner"
+        class="flex justify-between py-6 px-4 items-center container mx-auto transition-all duration-500 ease-in-out"
+      >
+        <div class="max-w-44">
+          <img src="/src/img/logo hotel amendoeiras.jpeg" alt="" />
+        </div>
+
+        <label
+          class="lg:hidden relative z-40 cursor-pointer px-3 py-6"
+          for="mobile-menu"
+        >
+          <input class="peer hidden" type="checkbox" id="mobile-menu" />
+          <div
+            class="relative z-50 block h-[1px] w-7 bg-black bg-transparent content-[''] before:absolute before:top-[-0.35rem] before:z-50 before:block before:h-full before:w-full before:bg-black before:transition-all before:duration-200 before:ease-out before:content-[''] after:absolute after:right-0 after:bottom-[-0.35rem] after:block after:h-full after:w-full after:bg-black after:transition-all after:duration-200 after:ease-out after:content-[''] peer-checked:bg-transparent before:peer-checked:top-0 before:peer-checked:w-full before:peer-checked:rotate-45 before:peer-checked:transform after:peer-checked:bottom-0 after:peer-checked:w-full after:peer-checked:-rotate-45 after:peer-checked:transform"
+          ></div>
+          <div
+            class="fixed inset-0 z-40 hidden h-full w-full bg-black/50 backdrop-blur-sm peer-checked:block"
+          >
+            &nbsp;
+          </div>
+          <div
+            class="fixed top-0 right-0 z-40 h-full w-full translate-x-full overflow-y-auto overscroll-y-none transition duration-500 peer-checked:translate-x-0"
+          >
+            <div
+              class="flex flex-col gap-8 justify-between float-right min-h-full w-full bg-white px-6 pt-12 shadow-2xl"
+            >
+              <div class="max-w-44">
+                <img src="/src/img/logo hotel amendoeiras.jpeg" alt="" />
+              </div>
+              <ul
+                class="flex flex-col gap-6 text-sm font-bold uppercase items-center"
+              >
+                <li class="hover:text-red-700"><a href="/">Home</a></li>
+                <li class="hover:text-red-700">
+                  <a href="/o-hotel.html">O Hotel</a>
+                </li>
+                <li class="hover:text-red-700">
+                  <a href="/quartos.html">Quartos</a>
+                </li>
+                <li class="hover:text-red-700">
+                  <a href="/lazer.html">Lazer</a>
+                </li>
+                <li class="hover:text-red-700">
+                  <a href="/atracoes.html">Atrações</a>
+                </li>
+                <li class="hover:text-red-700">
+                  <a href="/praias.html">Praias</a>
+                </li>
+                <li class="hover:text-red-700">
+                  <a href="/contato.html">Contato</a>
+                </li>
+                <li
+                  class="bg-[#DD9933] text-white rounded py-2 px-4 border border-[#DD9933] hover:bg-white hover:text-[#DD9933]"
+                >
+                  <a href="">Reservas</a>
+                </li>
+              </ul>
+
+              <div class="flex flex-col gap-4 text-[13px]/[27px]">
+                <div
+                  class="flex gap-4 text-2xl justify-around mb-4 relative after:w-full after:h-[1px] after:bg-[#EAEAEA] after:absolute after:-bottom-4"
+                >
+                  <a href=""
+                    ><i class="fa-brands fa-instagram hover:text-red-600"></i
+                  ></a>
+                  <a href=""
+                    ><i
+                      class="fa-brands fa-square-facebook hover:text-blue-500"
+                    ></i
+                  ></a>
+                  <a href=""
+                    ><i class="fa-brands fa-whatsapp hover:text-green-400"></i
+                  ></a>
+                </div>
+                <p class="text-center mb-4">
+                  +55 (73) 98815-5484 / +55 (73) 3298-1397
+                </p>
+              </div>
+            </div>
+          </div>
+        </label>
+
+        <div class="hidden lg:flex flex-col items-end gap-4">
+          <div class="flex gap-4 text-[13px]/[27px]">
+            <p class="border-b border-black">
+              Entre em contato.
+              <strong>+55 (73) 98815-5484 / +55 (73) 3298-1397</strong>
+            </p>
+            <div class="border-b border-black flex gap-4 text-lg">
+              <a href=""
+                ><i class="fa-brands fa-instagram hover:text-red-600"></i
+              ></a>
+              <a href=""
+                ><i class="fa-brands fa-square-facebook hover:text-blue-500"></i
+              ></a>
+              <a href=""
+                ><i class="fa-brands fa-whatsapp hover:text-green-400"></i
+              ></a>
+            </div>
+          </div>
+          <nav>
+            <ul
+              class="flex flex-wrap gap-9 xl:gap-12 text-[13px]/[14px] font-bold uppercase items-center"
+            >
+              <li class="hover:text-red-700"><a href="/">Home</a></li>
+              <li class="hover:text-red-700">
+                <a href="/o-hotel.html">O Hotel</a>
+              </li>
+              <li class="hover:text-red-700">
+                <a href="/quartos.html">Quartos</a>
+              </li>
+              <li class="hover:text-red-700">
+                <a href="/lazer.html">Lazer</a>
+              </li>
+              <li class="hover:text-red-700">
+                <a href="/atracoes.html">Atrações</a>
+              </li>
+              <li class="hover:text-red-700">
+                <a href="/praias.html">Praias</a>
+              </li>
+              <li class="hover:text-red-700">
+                <a href="/contato.html">Contato</a>
+              </li>
+              <li
+                class="bg-[#DD9933] text-white rounded py-2 px-4 border border-[#DD9933] hover:bg-white hover:text-[#DD9933]"
+              >
+                <a href="">Reservas</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section
+      id="hero-atracoes"
+      class="h-[130px] flex justify-center items-center"
+    >
+      <h2 class="text-6xl text-white EDIT drop-shadow-lg">Atrações</h2>
+    </section>
+
+    <section id="main" class="container mx-auto py-12 px-8">
+      <p class="mb-8">
+        Prado possui grandes belezas naturais, com praias paradisíacas e
+        diversas opções de lazer. As famílias ficarão com suas agendas cheias
+        para conseguirem conhecer todas as maravilhas de Prado. E para os mais
+        ousados, que não ficarão apenas observando, Prado ainda conta com
+        passeios de ultraleve, mergulhos e até mesmo os vôos de parapente nas
+        falésias.
+      </p>
+      <div class="grid grid-cols-2 gap-8">
+        <div class="flex flex-col gap-6">
+          <h2 class="text-2xl font-semibold EDIT">Baleia Jubarte</h2>
+          <div class="">
+            <img src="/src/img/atracoes/arquipelago-de-abrolhos-1.jpg" alt="" />
+          </div>
+          <p>
+            A baleia Jubarte é uma das grandes atrações de Prado, no período de
+            Julho a Novembro essas gigantes e maravilhosas baleias, que possuem
+            comprimento médio de 12 a 15 metros e possuem peso de
+            aproximadamente 25 toneladas invadem o litoral do extremo sul da
+            Bahia. Em Prado neste período acontecem passeios praticamente
+            diários de escunas, catamarãs e lanchas, e de acordo com as
+            condições climáticas e da época em apenas 15 minutos já podemos
+            avistar as Baleias Jubarte.
+          </p>
+        </div>
+        <div class="flex flex-col gap-6">
+          <h2 class="text-2xl font-semibold EDIT">Manguezal</h2>
+          <div class="">
+            <img src="/src/img/atracoes/manguezal.jpg" alt="" />
+          </div>
+          <p>
+            Quem chega em Prado vindo por Teixeira de Freitas já tem uma grande
+            surpresa na chegada, passando pela ponte que dá acesso surge o Rio
+            Jucuruçu e seus igarapés, em suas margens um grande manguezal, este
+            rio vai contornando a cidade de Prado realizando zigue-zague até
+            chegar no mar. Existem passeios exclusivos para visitar o manguezal
+            acompanhado de guias onde o turista além de maravilhar-se com sua
+            beleza também pode arriscar um banho de lama e até mesmo tentar
+            pegar um caranguejo ou guaiamum.
+          </p>
+        </div>
+        <div class="flex flex-col gap-6">
+          <h2 class="text-2xl font-semibold EDIT">Abrolhos</h2>
+          <div class="">
+            <img src="/src/img/atracoes/arquipelago-de-abrolhos-1.jpg" alt="" />
+          </div>
+          <p>
+            O descobridor Américo Vespúcio passando pela região do Extremo Sul
+            da Bahia anotou em sua carta de navegação: “Quando te aproximares da
+            terra, abre os olhos” com o intuito de avisar sobre uma área com
+            vários recifes surgiu o nome ABROLHOS, que hoje é um dos Parques
+            Nacionais Marinhos mais famoso e visitado. Principalmente no período
+            em que as baleias jubarte visitam nossa costa para a reprodução e
+            cria de seus filhotes (De Julho a Novembro).
+          </p>
+        </div>
+        <div class="flex flex-col gap-6">
+          <h2 class="text-2xl font-semibold EDIT">Monte Pascoal</h2>
+          <div class="">
+            <img src="/src/img/atracoes/monte-pascoal.jpg" alt="" />
+          </div>
+          <p>
+            O Monte Pascoal foi muito festejado pelos navegantes Portugueses,
+            pois foi a primeira porção de terra avistada no descobrimento do
+            Brasil depois de meses no mar. O Parque é uma importante reserva de
+            mata atlântica e também da vegetação nativa da bahia, possuindo rica
+            biodiversidade , com mais de 10 mil espécies de plantas, e várias
+            espécies de mamíferos, aves, anfíbios e répteis.
+          </p>
+        </div>
+        <div class="flex flex-col gap-6">
+          <h2 class="text-2xl font-semibold EDIT">Recife das Guaratibas</h2>
+          <div class="">
+            <img src="/src/img/atracoes/guaratiba.jpg" alt="" />
+          </div>
+          <p>
+            De escuna ou de lancha o passeio ao Recife Guaratibas é uma ótima
+            opção para os adeptos do mergulho com Snorkel. Além de nadar com uma
+            variedade de peixes multicoloridos você poderá observar formações
+            variadas de corais e uma variedade de espécies da vida marinha local
+            e aproveitar das piscinas naturais que se formam de acordo com a
+            maré.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer class="h-[94px] bg-black flex justify-center items-center">
+      <p class="text-white">
+        @ <a href="" class="text-red-500">Praia Hotel Amendoeiras</a> 2024.
+        Todos os direitos reservados.
+      </p>
+    </footer>
+  </body>
+</html>

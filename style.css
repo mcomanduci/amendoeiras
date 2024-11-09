@@ -1,0 +1,58 @@
+/* 
+Theme name: Amendoeiras
+Author: Marcelo Comanduci
+Description: Hotel Amendoeiras
+
+Text Domain: amendoeiras
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+}
+
+.EDIT {
+  font-family: "Dosis", serif;
+}
+
+/* #hero-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(img/home/entrada.jpg);
+  background-size: cover;
+  background-position: center;
+} */
+
+#background-video {
+  width: 100%;
+  position: absolute;
+  object-fit: contain;
+  left: 0;
+  right: 0;
+  top: -50%;
+  bottom: 0;
+  z-index: -1;
+}
+
+#hero-about {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(/src/img/home/entrada.jpg) no-repeat center center/cover;
+}
+
+#hero-lazer {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(/src/img/lazer/piscina.jpg) no-repeat center center/cover;
+}
+
+#hero-atracoes {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(/src/img/atracoes/hero-atracoes.jpg ) no-repeat center center/cover;
+}
+
+@media (max-width: 1024px) {
+  #background-video {
+    position: relative;
+    height: 100%;
+  }
+}

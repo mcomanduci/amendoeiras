@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Amendoeiras</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="/script.js"></script>
+    <script defer src="/script2.js"></script>
+  </head>
+  <body>
+    <header id="header" class="sticky top-0 bg-white w-full z-50">
+      <div
+        id="header-inner"
+        class="flex justify-between py-6 px-4 items-center container mx-auto transition-all duration-500 ease-in-out"
+      >
+        <div class="max-w-44">
+          <img src="/src/img/logo hotel amendoeiras.jpeg" alt="" />
+        </div>
+
+        <label
+          class="lg:hidden relative z-40 cursor-pointer px-3 py-6"
+          for="mobile-menu"
+        >
+          <input class="peer hidden" type="checkbox" id="mobile-menu" />
+          <div
+            class="relative z-50 block h-[1px] w-7 bg-black bg-transparent content-[''] before:absolute before:top-[-0.35rem] before:z-50 before:block before:h-full before:w-full before:bg-black before:transition-all before:duration-200 before:ease-out before:content-[''] after:absolute after:right-0 after:bottom-[-0.35rem] after:block after:h-full after:w-full after:bg-black after:transition-all after:duration-200 after:ease-out after:content-[''] peer-checked:bg-transparent before:peer-checked:top-0 before:peer-checked:w-full before:peer-checked:rotate-45 before:peer-checked:transform after:peer-checked:bottom-0 after:peer-checked:w-full after:peer-checked:-rotate-45 after:peer-checked:transform"
+          ></div>
+          <div
+            class="fixed inset-0 z-40 hidden h-full w-full bg-black/50 backdrop-blur-sm peer-checked:block"
+          >
+            &nbsp;
+          </div>
+          <div
+            class="fixed top-0 right-0 z-40 h-full w-full translate-x-full overflow-y-auto overscroll-y-none transition duration-500 peer-checked:translate-x-0"
+          >
+            <div
+              class="flex flex-col gap-8 justify-between float-right min-h-full w-full bg-white px-6 pt-12 shadow-2xl"
+            >
+              <div class="max-w-44">
+                <img src="/src/img/logo hotel amendoeiras.jpeg" alt="" />
+              </div>
+              <ul
+                class="flex flex-col gap-6 text-sm font-bold uppercase items-center"
+              >
+                <li class="hover:text-red-700"><a href="/">Home</a></li>
+                <li class="hover:text-red-700">
+                  <a href="/o-hotel.html">O Hotel</a>
+                </li>
+                <li class="hover:text-red-700">
+                  <a href="/quartos.html">Quartos</a>
+                </li>
+                <li class="hover:text-red-700">
+                  <a href="/lazer.html">Lazer</a>
+                </li>
+                <li class="hover:text-red-700">
+                  <a href="/atracoes.html">Atrações</a>
+                </li>
+                <li class="hover:text-red-700">
+                  <a href="/praias.html">Praias</a>
+                </li>
+                <li class="hover:text-red-700">
+                  <a href="/contato.html">Contato</a>
+                </li>
+                <li
+                  class="bg-[#DD9933] text-white rounded py-2 px-4 border border-[#DD9933] hover:bg-white hover:text-[#DD9933]"
+                >
+                  <a href="">Reservas</a>
+                </li>
+              </ul>
+
+              <div class="flex flex-col gap-4 text-[13px]/[27px]">
+                <div
+                  class="flex gap-4 text-2xl justify-around mb-4 relative after:w-full after:h-[1px] after:bg-[#EAEAEA] after:absolute after:-bottom-4"
+                >
+                  <a href=""
+                    ><i class="fa-brands fa-instagram hover:text-red-600"></i
+                  ></a>
+                  <a href=""
+                    ><i
+                      class="fa-brands fa-square-facebook hover:text-blue-500"
+                    ></i
+                  ></a>
+                  <a href=""
+                    ><i class="fa-brands fa-whatsapp hover:text-green-400"></i
+                  ></a>
+                </div>
+                <p class="text-center mb-4">
+                  +55 (73) 98815-5484 / +55 (73) 3298-1397
+                </p>
+              </div>
+            </div>
+          </div>
+        </label>
+
+        <div class="hidden lg:flex flex-col items-end gap-4">
+          <div class="flex gap-4 text-[13px]/[27px]">
+            <p class="border-b border-black">
+              Entre em contato.
+              <strong>+55 (73) 98815-5484 / +55 (73) 3298-1397</strong>
+            </p>
+            <div class="border-b border-black flex gap-4 text-lg">
+              <a href=""
+                ><i class="fa-brands fa-instagram hover:text-red-600"></i
+              ></a>
+              <a href=""
+                ><i class="fa-brands fa-square-facebook hover:text-blue-500"></i
+              ></a>
+              <a href=""
+                ><i class="fa-brands fa-whatsapp hover:text-green-400"></i
+              ></a>
+            </div>
+          </div>
+          <nav>
+            <ul
+              class="flex flex-wrap gap-9 xl:gap-12 text-[13px]/[14px] font-bold uppercase items-center"
+            >
+              <li class="hover:text-red-700"><a href="/">Home</a></li>
+              <li class="hover:text-red-700">
+                <a href="/o-hotel.html">O Hotel</a>
+              </li>
+              <li class="hover:text-red-700">
+                <a href="/quartos.html">Quartos</a>
+              </li>
+              <li class="hover:text-red-700">
+                <a href="/lazer.html">Lazer</a>
+              </li>
+              <li class="hover:text-red-700">
+                <a href="/atracoes.html">Atrações</a>
+              </li>
+              <li class="hover:text-red-700">
+                <a href="/praias.html">Praias</a>
+              </li>
+              <li class="hover:text-red-700">
+                <a href="/contato.html">Contato</a>
+              </li>
+              <li
+                class="bg-[#DD9933] text-white rounded py-2 px-4 border border-[#DD9933] hover:bg-white hover:text-[#DD9933]"
+              >
+                <a href="">Reservas</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section id="hero-lazer" class="h-[130px] flex justify-center items-center">
+      <h2 class="text-6xl text-white EDIT drop-shadow-lg">Área de Lazer</h2>
+    </section>
+
+    <section
+      id="main"
+      class="container mx-auto py-12 flex flex-col gap-8 px-4 lg:px-8"
+    >
+      <div class="space-y-2">
+        <p>
+          No Hotel Amendoeiras, cada canto da nossa área de lazer foi pensado
+          para proporcionar experiências memoráveis. Venha viver momentos únicos
+          em um lugar onde o conforto e a diversão se encontram!
+        </p>
+        <p>
+          Descubra a perfeita combinação de diversão e relaxamento na área de
+          lazer do Hotel Amendoeiras. Nosso espaço foi projetado para atender a
+          todos os gostos e idades, garantindo momentos inesquecíveis para toda
+          a família.
+        </p>
+      </div>
+
+      <div class="relative mx-auto overflow-hidden group w-full h-[85vh]">
+        <!-- Carousel Container -->
+        <div
+          id="carousel-lazer"
+          class="flex transition-transform duration-500 ease-in-out w-full h-[85vh] active"
+        >
+          <!-- Carousel Slide 1 -->
+          <div
+            class="w-full h-full flex-shrink-0 flex justify-center items-center w-full bg-[#eee]"
+          >
+            <img
+              src="/src/img/lazer/hotel-amendoeiras-274764.jpg"
+              alt="Slide 1"
+              class="object-contain h-auto w-auto max-w-full max-h-full"
+            />
+          </div>
+          <!-- Carousel Slide 2 -->
+          <div
+            class="w-full h-full flex-shrink-0 flex justify-center items-center bg-[#eee]"
+          >
+            <img
+              src="/src/img/lazer/hotel-amendoeiras-274765.jpg"
+              alt="Slide 2"
+              class="object-contain h-auto w-auto max-w-full max-h-full"
+            />
+          </div>
+          <!-- Carousel Slide 3 -->
+          <div
+            class="w-full h-full flex-shrink-0 flex justify-center items-center bg-[#eee]"
+          >
+            <img
+              src="/src/img/lazer/IMG_0080.jpg"
+              alt="Slide 3"
+              class="object-contain h-auto w-auto max-w-full max-h-full"
+            />
+          </div>
+
+          <div
+            class="w-full h-full flex-shrink-0 flex justify-center items-center bg-[#eee]"
+          >
+            <img
+              src="/src/img/lazer/IMG_0082.jpg"
+              alt="Slide 4"
+              class="object-contain h-auto w-auto max-w-full max-h-full"
+            />
+          </div>
+
+          <div
+            class="w-full h-full flex-shrink-0 flex justify-center items-center bg-[#eee]"
+          >
+            <img
+              src="/src/img/lazer/IMG_1453.jpg"
+              alt="Slide 5"
+              class="object-contain h-auto w-auto max-w-full max-h-full"
+            />
+          </div>
+        </div>
+
+        <!-- Carousel Controls (Invisible by default, shown on hover) -->
+        <button
+          id="prev"
+          class="absolute left-0 top-1/2 transform -translate-y-1/2 p-4 bg-black bg-opacity-50 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        >
+          Prev
+        </button>
+        <button
+          id="next"
+          class="absolute right-0 top-1/2 transform -translate-y-1/2 p-4 bg-black bg-opacity-50 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        >
+          Next
+        </button>
+
+        <!-- Indicators -->
+        <div
+          class="indicator-lazer-container absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2"
+        ></div>
+      </div>
+
+      <div class="space-y-4">
+        <ul class="space-y-4 mx-auto grid grid-cols-2">
+          <li class="space-y-2 flex gap-4">
+            <i class="fa-solid fa-sun text-2xl"></i>
+            <div>
+              <h3 class="text-xl">Espaço Gourmet Completo</h3>
+              <p>
+                Delicie-se no nosso Espaço Gourmet, um ambiente sofisticado e
+                acolhedor, onde você pode saborear pratos preparados com
+                ingredientes frescos e de alta qualidade. Com uma cozinha bem
+                equipada, oferecemos desde refeições leves até opções mais
+                elaboradas, tudo para agradar seu paladar. Desfrute de momentos
+                agradáveis à mesa, seja com amigos, família ou em um jantar
+                romântico.
+              </p>
+            </div>
+          </li>
+          <li class="space-y-2 flex gap-4">
+            <i class="fa-solid fa-person-swimming text-2xl"></i>
+            <div>
+              <h3 class="text-xl">Piscina Adulto e Infantil</h3>
+              <p>
+                Aproveite as águas cristalinas da nossa piscina, ideal para
+                relaxar e se refrescar. Enquanto os adultos desfrutam de
+                momentos de lazer à beira da piscina, as crianças podem se
+                divertir à vontade na área exclusiva para os pequenos. Com
+                espreguiçadeiras confortáveis e um ambiente seguro, todos podem
+                aproveitar o sol e a alegria das férias.
+              </p>
+            </div>
+          </li>
+          <li class="space-y-2 flex gap-4">
+            <i class="fa-solid fa-earth-oceania text-2xl"></i>
+            <div>
+              <h3 class="text-xl">Bilhar</h3>
+              <p>
+                Para os amantes de jogos, nosso espaço de bilhar oferece uma
+                ótima oportunidade para se divertir e competir de forma
+                descontraída. Reúna amigos e familiares para partidas
+                emocionantes enquanto desfruta de um ambiente animado e
+                acolhedor.
+              </p>
+            </div>
+          </li>
+          <li class="space-y-2 flex gap-4">
+            <i class="fa-solid fa-children text-2xl"></i>
+            <div>
+              <h3 class="text-xl">Espaço Kids</h3>
+              <p>
+                Pensando no conforto e na diversão das crianças, nosso Espaço
+                Kids é um local repleto de atividades lúdicas e educativas. Com
+                brinquedos e jogos variados, os pequenos poderão explorar sua
+                criatividade e fazer novas amizades, enquanto os pais relaxam
+                sabendo que estão em um ambiente seguro e divertido.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer class="h-[94px] bg-black flex justify-center items-center">
+      <p class="text-white">
+        @ <a href="" class="text-red-500">Praia Hotel Amendoeiras</a> 2024.
+        Todos os direitos reservados.
+      </p>
+    </footer>
+  </body>
+</html>
